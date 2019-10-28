@@ -1,12 +1,6 @@
-function User(name) {
-  this.name = name;
-}
+let usr = require('./user.js');
 
-User.prototype.hello = function(who) {
-  console.log("Hello, " + who.name);
-};
-
-const john = new User("John");
-const bill = new User("Bill");
+const john = new usr.User("John");
+const bill = new usr.User("Bill");
 
 bill.hello(john);
